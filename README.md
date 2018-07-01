@@ -1,8 +1,6 @@
 # Currency-Converter Project 
 ALC 7 Days of code challenge, currency converter using api
 
-![project screenshot](shot.png)
-
 ## Table of Contents
 
 * [Instructions](#instructions)
