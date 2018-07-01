@@ -10,8 +10,7 @@
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
 	    crossorigin="anonymous">
-	<script src="idb.js"></script>
-	<script src="./indexController.js"></script>
+	<script src="./idb.js"></script>
 	<script src="./converter.js"></script>
 	<style>
 		.input {
@@ -36,7 +35,7 @@
 				</select>
 				<br>
 				<label>Enter Amount:</label>
-				<input type="text" onkeypress="showme()" class="form-control" id="user_input">
+				<input type="text" class="form-control" id="user_input">
 				<br>
 				<label>Convert To:</label>
 				<select id="to" class="form-control">
@@ -48,7 +47,7 @@
 				<input type="text" id="show" class="form-control" readonly>
 				<br>
 				<br>
-				<input type="button" onclick="showme()" value="CONVERT" class="btn btn-primary input">
+				<input type="button" onclick="convert()" value="CONVERT" class="btn btn-primary input">
 				<br>
 				<br>
 			</form>
