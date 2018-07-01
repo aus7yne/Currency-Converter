@@ -1,0 +1,11 @@
+{
+  "name": "CURRENCY_CAL_ALC",
+  "scope": "/CURRENCY_CAL_ALC",
+  "icons": [{
+    "src": "/imgs/icon.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }],
+  "display": "standalone",
+  "start_url": "/CURRENCY_CAL_ALC"
+}
