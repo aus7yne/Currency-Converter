@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+
 
 let CACHE_NAME = 'alc-cache-v1';
 let allCaches = [
