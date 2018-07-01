@@ -25,14 +25,14 @@ fetch(url)
             let from = document.createElement("option");
             let selectFrom = document.getElementById("from");
             selectFrom.appendChild(from);
-            from.innerHTML = `(${currencies[currency].name})` + " " + `(${currencies[currency].currencySymbol})`;
+            from.innerHTML = `${currencies[currency].name}` + " " + `(${currencies[currency].currencySymbol})`;
             from.setAttribute("value", `${currencies[currency].currencyId}`);
 
             //Getting the currencyId into the option field for *to*
             let to = document.createElement("option");
             let selectTo = document.getElementById("to");
             selectTo.appendChild(to);
-            to.innerHTML = `(${currencies[currency].name})` + " " + `(${currencies[currency].currencySymbol})`;
+            to.innerHTML = `${currencies[currency].name}` + " " + `(${currencies[currency].currencySymbol})`;
             to.setAttribute("value", `${currencies[currency].currencyId}`);
         }
     });
