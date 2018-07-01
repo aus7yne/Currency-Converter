@@ -7,13 +7,9 @@ ALC 7 Days of code challenge, currency converter using api
 
 * [Instructions](#instructions)
 
-* [Contributing](#contributing)
-
 * [Live_Page](#live_page)
 
-* [New_Functionality](#new_functionality)
-
-* [Slack_Handle](#slack_handle)
+* [Functionality](#new_functionality)
 
 * [Experience](#experience)
 
@@ -21,23 +17,22 @@ ALC 7 Days of code challenge, currency converter using api
 
 ## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
-
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students-. Therefore, we most likely will not accept pull requests.
+To get started, open `index.html` and start building out the app's functionality.
 
 ## Live_Page
 
-To test and review the live page for the **Currency Converter Project** please click [here](https://aus7yne.github.io/currency-converter).
+To test and review the live page for the **Currency Converter Project** please click [here](https://aus7yne.github.io/Currency-Converter/).
 
-## New_Functionality
+## Functionality
+The application must make use of the following
+1. Service Worker
+2. Cache API
+3. IndexedDB
 
-
-## Slack_Handle
-
-My _**slack handle**_ for the [ALC with Google 3.0](alcwithgoogle3.slack.com) is [@aus7yne](https://alcwithgoogle3.slack.com/team/UAKLQ7VJ4). 
+**Application Functions**
+This application is able to:
+1. Select currencies to be converted from and to
+2. Convert currencies while the application is online or offline
 
 ## Experience
 
