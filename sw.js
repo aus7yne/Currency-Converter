@@ -9,11 +9,11 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll([
-        '../currency_cal_alc',
-        '../currency_cal_alc/index.html',
-        '../currency_cal_alc/converter.js',
-        '../currency_cal_alc/idb.js',
-        'https://free.currencyconverterapi.com/api/v5/currencies'
+        '/Currency-Converter',
+        '/Currency-Converter/index.html',
+        /* '/currency_cal_alc/converter.js',
+        '/currency_cal_alc/idb.js',
+        'https://free.currencyconverterapi.com/api/v5/currencies' */
       ]);
     })
   );
@@ -48,47 +48,3 @@ self.addEventListener('fetch', function (event) {
 });
 
 
-
-
-
-
-
-
-
-
-
-/* self.addEventListener('activate', function (event) {
-
-  var cacheWhitelist = ['alc-cache-v1'];
-
-  event.waitUntil(
-    caches.keys().then(function (cacheNames) {
-      return Promise.all(
-        cacheNames.map(function (cacheName) {
-          //console.log(cacheName);
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
-            console.log(caches.delete(cacheName));
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
-});
-
-self.addEventListener('fetch', function(event) {
-  let requestUrl = new URL(event.request.url);
-
-  if (requestUrl.origin === location.origin) {
-    if (requestUrl.pathname === '/currency_cal_alc') {
-      event.respondWith(caches.match('/currency_cal_alc/index.html'));
-      return;
-    }
-  }
-
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      return response || fetch(event.request);
-    })
-  );
-}); */
