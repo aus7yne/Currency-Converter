@@ -9,12 +9,10 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll([
-        '/currency_cal_alc',
-        '/currency_cal_alc/index.html',
-        '/currency_cal_alc/converter.js',
-        '/currency_cal_alc/idb.js',/* 
-        'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
-        'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css',  */
+        '../currency_cal_alc',
+        '../currency_cal_alc/index.html',
+        '../currency_cal_alc/converter.js',
+        '../currency_cal_alc/idb.js',
         'https://free.currencyconverterapi.com/api/v5/currencies'
       ]);
     })
