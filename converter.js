@@ -73,6 +73,7 @@
                 }
             })
             .catch(() => {
+                alert('YOU ARE OFFLINE');
                 let indexedDB = window.indexedDB;
                 let open = indexedDB.open('rates', 1);
                 open.onsuccess = function () {
